@@ -1,0 +1,72 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/wooden_axe"
+	},
+	
+	"overrides": [
+		{
+			"predicate": {
+				"custom_model_data": 10
+			},
+			"model": "guns:item/pistol/holding"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 11
+			},
+			"model": "guns:item/pistol/aiming"
+		},
+
+
+		{
+			"predicate": {
+				"custom_model_data": 20
+			},
+			"model": "guns:item/rifle/holding"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 21
+			},
+			"model": "guns:item/rifle/aiming"
+		},
+		
+		
+		{
+			"predicate": {
+				"custom_model_data": 30
+			},
+			"model": "guns:item/heavy_rifle/holding"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 31
+			},
+			"model": "guns:item/heavy_rifle/aiming"
+		},
+
+
+		{
+			"predicate": {
+				"custom_model_data": 40
+			},
+			"model": "guns:item/shotgun/holding"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 41
+			},
+			"model": "guns:item/shotgun/aiming"
+		},
+		
+
+		{
+			"predicate": {
+				"custom_model_data": 50
+			},
+			"model": "guns:item/mini_gun/holding"
+		}
+		
+	]
+}

@@ -1,0 +1,65 @@
+{
+    "alarms.breach": {
+        "sounds": [
+            {
+                "name": "scp:alarm/breach"
+            }
+        ]
+    },
+
+    "alarms.nuke-alarm": {
+        "sounds": [
+            {
+                "name": "scp:alarm/nuke-alarm"
+            }
+        ]
+    },
+	
+	"alarms.raid": {
+        "sounds": [
+            {
+                "name": "scp:alarm/raid"
+            }
+        ]
+    },
+
+    "decontamination.start": {
+        "sounds": [
+            {
+                "name": "scp:decontamination/start"
+            }
+        ]
+    },
+
+    "decontamination.1": {
+        "sounds": [
+            {
+                "name": "scp:decontamination/1"
+            }
+        ]
+    },
+
+    "decontamination.5": {
+        "sounds": [
+            {
+                "name": "scp:decontamination/5"
+            }
+        ]
+    },
+
+    "decontamination.10": {
+        "sounds": [
+            {
+                "name": "scp:decontamination/10"
+            }
+        ]
+    },
+
+    "decontamination.15": {
+        "sounds": [
+            {
+                "name": "scp:decontamination/15"
+            }
+        ]
+    }
+}

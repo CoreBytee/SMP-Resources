@@ -1,0 +1,44 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/feather"
+	},
+	
+	"overrides": [
+		{
+			"predicate": {
+				"custom_model_data": 1
+			},
+			"model": "camera:items/camera_ceiling"
+		},
+		
+		{
+			"predicate": {
+				"custom_model_data": 2
+			},
+			"model": "camera:items/camera"
+		},
+		
+		{
+			"predicate": {
+				"custom_model_data": 3
+			},
+			"model": "scp:items/keycards/level3"
+		},
+		
+		{
+			"predicate": {
+				"custom_model_data": 4
+			},
+			"model": "scp:items/keycards/level4"
+		},
+		
+		{
+			"predicate": {
+				"custom_model_data": 5
+			},
+			"model": "scp:items/keycards/level5"
+		}
+		
+	]
+}

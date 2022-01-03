@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+      "texture": "coins:item/coin"
+    }
+}

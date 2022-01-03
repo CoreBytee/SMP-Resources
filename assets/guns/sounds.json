@@ -1,0 +1,41 @@
+{
+    "gun.click": {
+        "sounds": [
+            {
+                "name": "guns:random/click"
+            }
+        ]
+    },
+
+    "item.mini_gun.fire": {
+        "sounds": [
+            {
+                "name": "guns:item/mini_gun/fire"
+            }
+        ]
+    },
+
+    "item.pistol.fire": {
+        "sounds": [
+            {
+                "name": "guns:item/pistol/fire"
+            }
+        ]
+    },
+
+    "item.rifle.fire": {
+        "sounds": [
+            {
+                "name": "guns:item/rifle/fire"
+            }
+        ]
+    },
+
+    "item.heavy_rifle.fire": {
+        "sounds": [
+            {
+                "name": "guns:item/heavy_rifle/fire"
+            }
+        ]
+    }
+}
