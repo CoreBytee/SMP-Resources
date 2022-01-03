@@ -15,7 +15,7 @@ jobs:
       run: unzip -q -n PackFiles.zip -d ./Files
       
     - name: ls
-      run: ls ./Files
+      run: ls ./Files/SMP-Resources-main/
       
     - name: Echo Filename
       run: echo "$BUILDTEXT ($ASSEMBLYNAME)"
