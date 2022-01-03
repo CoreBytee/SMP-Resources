@@ -1,0 +1,47 @@
+name: Release Pack
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: GetStrippedRefs
+      env:
+        FILES_URL: ${{ secrets.BSFILES_URL }}
+      run: wget --no-check-certificate "$FILES_URL" -q -O PackFiles.zip
+      
+    - name: ExtractRefs
+      run: unzip -q -n PackFiles.zip -d ./Files
+      
+    - name: ls
+      run: ls ./Files
+      
+    - name: Echo Filename
+      run: echo "$BUILDTEXT ($ASSEMBLYNAME)"
+      env:
+        BUILDTEXT: Filename=${{ steps.Build.outputs.filename }}
+        ASSEMBLYNAME: AssemblyName=${{ steps.Build.outputs.assemblyname }}
+        
+    - name: Archive Release
+      uses: thedoctor0/zip-release@master
+      with:
+        type: 'zip'
+        filename: '${{ steps.Build.outputs.filename }}.zip'
+        directory: SaberFactory/bin/Release/Final
+        
+    - name: Set tag output
+      id: vars
+      run: echo ::set-output name=tag::${GITHUB_REF#refs/*/}
+      
+    - name: Create Release
+      uses: ncipollo/release-action@v1
+      with:
+        name: Saber Factory ${{ steps.vars.outputs.tag }}
+        artifacts: SaberFactory/bin/Release/Final/${{ steps.Build.outputs.filename }}.zip
+        bodyFile: changelog.md
+        token: ${{ secrets.GITHUB_TOKEN }}
+        allowUpdates: true
+        prerelease: true
